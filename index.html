@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Abdube Dida Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Navigation -->
+  <header class="flex justify-between items-center p-6 border-b border-gray-700">
+    <h1 class="text-xl font-bold">Abdube Dida</h1>
+    <nav class="space-x-4">
+      <a href="#about" class="hover:text-blue-400">About</a>
+      <a href="#services" class="hover:text-blue-400">Services</a>
+      <a href="#projects" class="hover:text-blue-400">Projects</a>
+      <a href="#contact" class="hover:text-blue-400">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="flex flex-col lg:flex-row items-center justify-between p-10">
+    <div class="lg:w-1/2 space-y-6">
+      <h2 class="text-4xl font-bold">Hi, I’m Abdube Dida</h2>
+      <p class="text-gray-300">
+        I'm a 23-year-old Full Stack Developer with SOC Certification, Certified Ethical Hacker, and student at Kirinyaga University. I specialize in both front-end and back-end development. I recently developed a POS System for AppKings Solutions Ltd and worked with Optimax Group Ltd as a Fiber Networking Specialist.
+      </p>
+      <div class="space-y-1 text-sm text-gray-400">
+        <p>📧 didaabdube22@gmail.com</p>
+        <p>📞 0708609096</p>
+        <p>📍 Marsabit, P.O Box 60500, 10</p>
+      </div>
+    </div>
+    <div class="mt-10 lg:mt-0 lg:w-1/3">
+      <img src="images/WhatsApp Image 2025-06-23 at 9.59.58 AM.jpeg" alt="Abdube Dida" class="rounded-lg shadow-lg border border-gray-600 w-60 h-auto max-w-full" />
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="p-10 bg-gray-900">
+    <h3 class="text-2xl font-semibold mb-4">My Services</h3>
+    <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-bold text-white">Web Development</h4>
+        <p>Full-stack website design and development using modern technologies like HTML, CSS, JavaScript, React, PHP, and MySQL.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-bold text-white">Cybersecurity Consulting</h4>
+        <p>Penetration testing, vulnerability scanning, and system hardening. Certified Ethical Hacking and SOC monitoring skills.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-bold text-white">Networking & Infrastructure</h4>
+        <p>Fiber connections, router and switch configuration, LAN/WAN setup. Experience from Optimax Group Ltd.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-bold text-white">Technical Writing</h4>
+        <p>Writing case studies, documentation, and technical blogs to support teams and showcase solutions.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="p-10">
+    <h3 class="text-2xl font-semibold mb-4">Skills & Tools</h3>
+    <div class="grid md:grid-cols-2 gap-6 text-gray-300">
+      <div>
+        <h4 class="font-bold text-white">Programming Languages</h4>
+        <ul class="list-disc ml-6">
+          <li>HTML, CSS, JavaScript</li>
+          <li>Java, PHP, MySQL</li>
+          <li>Python</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white">Tools & Frameworks</h4>
+        <ul class="list-disc ml-6">
+          <li>React.js</li>
+          <li>Bootstrap</li>
+          <li>Figma</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-bold text-white">Cybersecurity Skills</h4>
+        <ul class="list-disc ml-6">
+          <li>Certified Ethical Hacker (CEH)</li>
+          <li>Kali Linux expert (penetration testing, information gathering, exploitation)</li>
+          <li>SIEM monitoring & SOC operations</li>
+<li>CompTIA Security+ Certification</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="p-10">
+    <h3 class="text-2xl font-semibold mb-4">My Work</h3>
+    <div class="space-y-4">
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-bold text-white">Point of Sales System</h4>
+        <p class="text-gray-300">Built for AppKings Solutions Ltd — this system manages inventory, sales, and receipt printing for retail operations.</p>
+      </div>
+      <div class="bg-gray-800 p-4 rounded-lg">
+        <h4 class="font-bold text-white">Networking Specialist - Optimax Group Ltd</h4>
+        <p class="text-gray-300">Worked from 5th May to 8th August 2024 as a fiber connectivity expert.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section id="blog" class="p-10 bg-gray-900">
+    <h3 class="text-2xl font-semibold mb-4">Blog & Articles</h3>
+    <p class="text-gray-300">
+      I write technical blogs and case studies related to development, cybersecurity, and networking. Stay tuned for updates!
+    </p>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-10">
+    <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+    <form onsubmit="return showAlert()" class="space-y-4 max-w-lg">
+      <input type="email" id="email" placeholder="Enter your email" class="w-full p-2 rounded bg-gray-800 text-white" required>
+      <textarea placeholder="Your message" class="w-full p-2 rounded bg-gray-800 text-white" rows="4"></textarea>
+      <button type="submit" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-500">Send Message</button>
+    </form>
+  </section>
+
+  <footer class="text-center p-4 text-sm text-gray-500">
+    &copy; 2025 Abdube Dida Portfolio. All rights reserved.
+  </footer>
+
+  <!-- JavaScript Alert -->
+  <script>
+    function showAlert() {
+      const email = document.getElementById('email').value;
+      alert("Thanks for contacting me, " + email + "!");
+      return false;
+    }
+  </script>
+
+</body>
+</html>
