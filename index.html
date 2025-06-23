@@ -5,13 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Abdube Dida Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+    .animate-blink {
+      animation: blink 1s step-start infinite;
+    }
+
+    @keyframes scroll-shine {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+    .animate-scroll {
+      animation: scroll-shine 10s linear infinite;
+      display: inline-block;
+      white-space: nowrap;
+    }
+  </style>
 </head>
 <body class="bg-black text-white font-sans">
 
   <!-- Navigation -->
-  <header class="flex flex-col sm:flex-row justify-between items-center p-6 border-b border-gray-700 gap-4">
-    <h1 class="text-xl font-bold">Abdube Dida</h1>
-    <nav class="flex flex-wrap gap-3 text-sm">
+  <header class="flex justify-between items-center p-6 border-b border-gray-700">
+    <h1 class="text-xl font-bold animate-blink bg-gradient-to-r from-yellow-400 via-gray-100 to-yellow-300 bg-clip-text text-transparent">
+      Abdube Dida
+    </h1>
+    <nav class="space-x-4">
       <a href="#about" class="hover:text-blue-400">About</a>
       <a href="#services" class="hover:text-blue-400">Services</a>
       <a href="#projects" class="hover:text-blue-400">Projects</a>
@@ -20,9 +40,11 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="flex flex-col-reverse lg:flex-row items-center justify-between p-6 md:p-10 gap-10">
-    <div class="w-full lg:w-1/2 space-y-6 text-center lg:text-left">
-      <h2 class="text-3xl md:text-4xl font-bold">Hi, I’m Abdube Dida</h2>
+  <section class="flex flex-col lg:flex-row items-center justify-between p-10">
+    <div class="lg:w-1/2 space-y-6">
+      <h2 class="text-4xl font-bold overflow-hidden whitespace-nowrap animate-scroll bg-gradient-to-r from-white via-yellow-300 to-white bg-clip-text text-transparent">
+        Hi, I’m Abdube Dida
+      </h2>
       <p class="text-gray-300">
         I'm a 23-year-old Full Stack Developer with SOC Certification, Certified Ethical Hacker, and student at Kirinyaga University. I specialize in both front-end and back-end development. I recently developed a POS System for AppKings Solutions Ltd and worked with Optimax Group Ltd as a Fiber Networking Specialist.
       </p>
@@ -32,15 +54,15 @@
         <p>📍 Marsabit, P.O Box 60500, 10</p>
       </div>
     </div>
-    <div class="w-full sm:w-2/3 md:w-1/2 lg:w-1/3 flex justify-center">
-      <img src="images/abdube.jpeg" alt="Abdube Dida" class="rounded-lg shadow-lg border border-gray-600 w-48 sm:w-60 h-auto max-w-full" />
+    <div class="mt-10 lg:mt-0 lg:w-1/3">
+      <img src="images/abdube.jpeg" alt="Abdube Dida" class="rounded-lg shadow-lg border border-gray-600" />
     </div>
   </section>
 
   <!-- Services Section -->
-  <section id="services" class="p-6 md:p-10 bg-gray-900">
-    <h3 class="text-2xl font-semibold mb-4 text-center">My Services</h3>
-    <div class="grid gap-6 md:grid-cols-2 text-gray-300">
+  <section id="services" class="p-10 bg-gray-900">
+    <h3 class="text-2xl font-semibold mb-4">My Services</h3>
+    <div class="grid md:grid-cols-2 gap-6 text-gray-300">
       <div class="bg-gray-800 p-4 rounded-lg">
         <h4 class="font-bold text-white">Web Development</h4>
         <p>Full-stack website design and development using modern technologies like HTML, CSS, JavaScript, React, PHP, and MySQL.</p>
@@ -61,8 +83,8 @@
   </section>
 
   <!-- Skills Section -->
-  <section id="skills" class="p-6 md:p-10">
-    <h3 class="text-2xl font-semibold mb-4 text-center">Skills & Tools</h3>
+  <section id="skills" class="p-10">
+    <h3 class="text-2xl font-semibold mb-4">Skills & Tools</h3>
     <div class="grid md:grid-cols-2 gap-6 text-gray-300">
       <div>
         <h4 class="font-bold text-white">Programming Languages</h4>
@@ -86,15 +108,15 @@
           <li>Certified Ethical Hacker (CEH)</li>
           <li>Kali Linux expert (penetration testing, information gathering, exploitation)</li>
           <li>SIEM monitoring & SOC operations</li>
-          <li>CompTIA Security+ Certification</li>
+          <li>CompTIA Security+ Certified</li>
         </ul>
       </div>
     </div>
   </section>
 
   <!-- Projects Section -->
-  <section id="projects" class="p-6 md:p-10">
-    <h3 class="text-2xl font-semibold mb-4 text-center">My Work</h3>
+  <section id="projects" class="p-10">
+    <h3 class="text-2xl font-semibold mb-4">My Work</h3>
     <div class="space-y-4">
       <div class="bg-gray-800 p-4 rounded-lg">
         <h4 class="font-bold text-white">Point of Sales System</h4>
@@ -108,20 +130,20 @@
   </section>
 
   <!-- Blog Section -->
-  <section id="blog" class="p-6 md:p-10 bg-gray-900">
-    <h3 class="text-2xl font-semibold mb-4 text-center">Blog & Articles</h3>
-    <p class="text-gray-300 text-center">
+  <section id="blog" class="p-10 bg-gray-900">
+    <h3 class="text-2xl font-semibold mb-4">Blog & Articles</h3>
+    <p class="text-gray-300">
       I write technical blogs and case studies related to development, cybersecurity, and networking. Stay tuned for updates!
     </p>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="p-6 md:p-10">
-    <h3 class="text-2xl font-semibold mb-4 text-center">Contact Me</h3>
-    <form onsubmit="return showAlert()" class="space-y-4 max-w-lg mx-auto">
+  <section id="contact" class="p-10">
+    <h3 class="text-2xl font-semibold mb-4">Contact Me</h3>
+    <form onsubmit="return showAlert()" class="space-y-4 max-w-lg">
       <input type="email" id="email" placeholder="Enter your email" class="w-full p-2 rounded bg-gray-800 text-white" required>
       <textarea placeholder="Your message" class="w-full p-2 rounded bg-gray-800 text-white" rows="4"></textarea>
-      <button type="submit" class="w-full bg-blue-600 px-4 py-2 rounded hover:bg-blue-500">Send Message</button>
+      <button type="submit" class="bg-blue-600 px-4 py-2 rounded hover:bg-blue-500">Send Message</button>
     </form>
   </section>
 
@@ -140,6 +162,7 @@
 
 </body>
 </html>
+
 
 
 
